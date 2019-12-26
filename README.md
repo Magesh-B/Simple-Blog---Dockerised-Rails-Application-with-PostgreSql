@@ -1,24 +1,17 @@
-# README
+# STEPS TO FOLLOW
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#starting server
+sudo docker-compose up
 
-Things you may want to cover:
+#creating database
+sudo docker-compose run web rails db:create
 
-* Ruby version
+#for container's terminal
+sudo docker-compose exec web bash
 
-* System dependencies
+#migrating in container's terminal
+rails db:migrate
 
-* Configuration
+#stopping server
+sudo docker-compose down
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
