@@ -1,17 +1,17 @@
 # STEPS TO FOLLOW
 
-#starting server
-sudo docker-compose up
+#starting server  
+sudo docker-compose up  
 
-#creating database
-sudo docker-compose run web rails db:create
+#creating database  
+sudo docker-compose run web rails db:create  
 
-#for container's terminal
-sudo docker-compose exec web bash
+#for container's terminal  
+sudo docker-compose exec web bash  
 
-#migrating in container's terminal
-rails db:migrate
+#migrating in container's terminal  
+rails db:migrate  
 
-#stopping server
-sudo docker-compose down
+#stopping server  
+sudo docker-compose down  
 
