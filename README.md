@@ -1,5 +1,8 @@
 # STEPS TO FOLLOW
 
+# building app
+sudo docker-compose build
+
 # starting server  
 sudo docker-compose up  
 
